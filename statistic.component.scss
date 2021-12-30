@@ -769,7 +769,7 @@
             max-width: 1030px;
             border-bottom: 1px solid #27272E;
             border-right: 1px solid #27272E;
-            padding: 36px 90px 82px 90px;
+            padding: 36px 90px 37px 90px;
 
             .vehicles__title {
                 font-family: $fontMedium;
@@ -792,6 +792,7 @@
 
                 &:not(:last-child) {
                     margin-right: 60px;
+                    margin-bottom: 45px;
                 }                
             }
 
@@ -1600,98 +1601,79 @@
     
         .bottom {
             .shots {
-                padding: 38px 0 40px 50px;
-                width: 100%;
-                max-width: unset;
-                border-bottom: 1px solid #27272E;
-                border-right: none;
+                padding: 30px 0 10px 30px;
+                align-items: center;
     
                 &__title {
-                    margin-bottom: 10px;
+                    font-size: 14px;
+                    line-height: 20px;
+                    margin-bottom: 4px;
                 }
-    
-                &__items {
-                    justify-content: unset;
-                    padding-right: 0;
+
+                &__subtitle {
+                    font-size: 11px;
+                    line-height: 20px;
+                    margin-bottom: 21px;
                 }
     
                 &__item {
-                    min-width: 190px;
-                    margin-bottom: 30px;
-                    margin-right: 40px;
-
-                    &:nth-child(2n) {
-                        margin-right: 0;
-                    }
+                    min-width: 220px;
+                    margin-bottom: 20px;
+                    margin-right: 0px;
     
                     .shots__item-header {
-                        padding-bottom: 7px;
-                    }
-    
-                    .shots__item-body {
-                        .shots__item-row {
-                            &:not(:last-child) {
-                                margin-bottom: 0;
-                            }
-                        }
+                        padding-bottom: 6px;
                     }
                 }
-    
+
                 &__man {
-                    min-width: 297px;
-                    height: 403px;
-                    background-image: url(^../../img/statistic/man.png);
-                    background-repeat: no-repeat;
-                    background-size: contain;
-                    background-position: center;
+                    min-width: 279px;
                 }
             }
     
             .soundness {
-                padding: 38px 60px 22px 52px;
-                max-width: unset;
-                width: 100%;
-                border-bottom: 1px solid #27272E;
+                padding: 25px 30px 22px 30px;
     
                 &__title {
+                    font-size: 14px;
                     margin-bottom: 20px;
                 }
 
                 &__col-block {
-                    flex-direction: row;
-                    justify-content: space-between;
+                    width: 100%;
+                    flex-wrap: wrap;
                 }
     
                 &__bars {
                     width: 100%;
-                    max-width: 185px;
-                    margin-bottom: 0;
+                    max-width: 100%;
+                    margin-bottom: 34px;
     
                     .soundness__item {
-                        width: 185px;
+                        width: 220px;
                         margin-bottom: 15px;
                     }
                 }
     
                 &__stats {
                     margin-bottom: 0;
-                    max-width: 189px;
+                    max-width: 220px;
     
                     .soundness__stats-title {
-                        padding-bottom: 7px;
+                        padding-bottom: 2px;
                         margin-bottom: 16px;
                     }
     
                     .soundness__stats-items {
                         .soundness__stats-item {
-                            width: 189px;
+                            width: 220px;
                             margin-bottom: 0;
                         }
                     }
                 }
     
                 &__heals {
-                    max-width: 199px;
+                    max-width: 220px;
 
                     .soundness__heals-title {
                         margin-bottom: 21px;
@@ -1699,9 +1681,10 @@
         
                     .soundness__heals-items {
                         .soundness__heals-item {
-                            width: 35px;
-                            height: 35px;
+                            width: 30px;
+                            height: 30px;
                             margin-bottom: 10px;
+                            margin-right: 10px;
                         }
                     }
                 }
@@ -1712,11 +1695,17 @@
                 max-width: unset;
                 border-bottom: none;
                 border-right: none;
-                padding: 36px 50px;
+                padding: 32px 30px 32px 39px;
+
+                .vehicles__title {
+                    font-size: 14px;
+                    line-height: 20px;
+                    margin-bottom: 40px;
+                }
     
                 .vehicles__item {
                     &:not(:last-child) {
-                        margin-right: 40px;
+                        margin-right: 28px;
                     }                
                 }
     
@@ -1726,7 +1715,8 @@
                 }
     
                 .vehicles__span {
-                    top: -13px;
+                    top: -17px;
+                    right: -15px;
                 }
             }
         }
